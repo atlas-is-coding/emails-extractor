@@ -85,22 +85,15 @@ func (a App) ExtractEmails() error {
 
 					output, err := os.OpenFile(p, os.O_WRONLY|os.O_CREATE, 0644)
 					if err != nil {
-						close(quitChan)
-						close(emailsChan)
 						panic("failed to open file")
 					}
 
 					_, err = output.Write([]byte(strings.Join(mergedEmails, "\n")))
 					if err != nil {
-						close(quitChan)
-						close(emailsChan)
 						panic("failed to write to fail")
 					}
 
-					logger.GetLogger().Info("done! Close all the channels and finish my job")
-					close(quitChan)
-					close(emailsChan)
-
+					logger.GetLogger().Info("done! Finish my job")
 					wg.Done()
 				}
 			}
@@ -142,6 +135,10 @@ func (a App) ExtractEmails() error {
 	quitChan <- true
 
 	<-doneChan
+
+	close(emailsChan)
+	close(quitChan)
+	close(doneChan)
 
 	return nil
 }
