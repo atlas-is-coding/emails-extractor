@@ -1,0 +1,6 @@
+---
+databases:
+  # Default paths. It's better to keep them without changes | If you want to modify these paths enter FULL PATH
+  input: "./databases/" # Directory with files
+  output: "./results/" # Directory with extracted files
+  merged_output: "./all/" # Directory that contains merged file `timestamp_all.txt` that have all emails from directory `input`
