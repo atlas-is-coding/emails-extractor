@@ -5,7 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="39054df0-8c5f-4b52-9f43-aaf054869d83" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/go.mod" beforeDir="false" afterPath="$PROJECT_DIR$/go.mod" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/internal/app/app.go" beforeDir="false" afterPath="$PROJECT_DIR$/app/internal/app/app.go" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -53,16 +55,17 @@
 }</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/databases" />
       <recent name="$PROJECT_DIR$/app/internal/extractors/txt" />
       <recent name="$PROJECT_DIR$/app/internal/extractors/sql" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/app/internal/extractors/csv" />
       <recent name="$PROJECT_DIR$/app/internal/extractors" />
       <recent name="$PROJECT_DIR$/app/internal/extractors/txt" />
       <recent name="$PROJECT_DIR$/app/internal/extractors/sql" />
-      <recent name="$PROJECT_DIR$/app" />
     </key>
   </component>
   <component name="RunManager" selected="Go Build.go build emails_extractor/app/cmd/app (1)">
